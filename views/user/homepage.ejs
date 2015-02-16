@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Login With Sails</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+    <title>Ionic App With Sails Js</title>
+  </head>
+
+  <body>
+
+    <h1>Basic Login With Sails</h1>
+
+    <% if (req.session.me) { %>
+    <a href="/logout">Logout</a>
+    <% } else { %>
+    <a href="/login">Login</a> | <a href="/signup">Signup</a>
+    <% } %>
+
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/angular-ui/angular-ui-router.js"></script>
+    <script src="/js/angular-ui/angular-ui-router.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers.js"></script>
+    <script src="/js/hello.js"></script>
+    <script src="/js/ionic-angular.js"></script>
+    <script src="/js/ionic-angular.min.js"></script>
+    <script src="/js/ionic.bundle.js"></script>
+    <script src="/js/ionic.bundle.min.js"></script>
+    <script src="/js/ionic.js"></script>
+    <script src="/js/ionic.min.js"></script>
+    <script src="/js/ionic_app.js"></script>
+    <script src="/js/ng-cordova.min.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>

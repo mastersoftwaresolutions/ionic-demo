@@ -1,0 +1,28 @@
+<ion-view style="" title="Register new account">
+    <ion-content class="has-header" scroll="false" padding="true">
+        <form style="" ng-submit="signup()" >
+            <div data-ng-show="error" class="text-center text-danger">
+                <strong data-ng-bind="error"></strong>
+            </div>
+            <ion-list style="">
+                <label style="" class="item item-input">
+                    <span class="input-label">Name</span>
+                    <input placeholder="" ng-model='user.name' type="text">
+                </label>
+                <label style="" class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input placeholder=""  ng-model='user.email' type="email">
+                </label>
+                <label style="" class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="" ng-model='user.password' type="text">
+                </label>
+            </ion-list>
+            <button type="submit" style="" class="button button-stable button-block">Sign up</button>
+            <a style="" class="button button-positive button-clear button-block" href="#/login">Or login with email and password</a>
+        </form>
+        <button class="button button-block button-positive" ng-click="signupFacebook()">
+          Sign up with Facebook
+        </button>
+    </ion-content>
+</ion-view>

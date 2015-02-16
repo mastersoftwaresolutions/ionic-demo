@@ -1,0 +1,25 @@
+<ion-view style="" title="Login with your email and password">
+    <ion-content class="has-header" padding="true">
+        <form style="" ng-submit="login()">
+            <div data-ng-show="error" class="text-center text-danger">
+                <strong data-ng-bind="error"></strong>
+            </div>
+            <ion-list style="">
+                <label style="" class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input placeholder="" ng-model="user.email" type="email">
+                </label>
+                <label style="" class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input placeholder="" ng-model="user.password" type="password">
+                </label>
+            </ion-list>
+            <div style="height: 40px;" class="spacer"></div>
+            <button style="" type="submit" class="button button-stable button-block">Login</button>
+            <a style="" class="button button-positive button-clear button-block" href="#/signup">Or create an account</a>           
+        </form>
+         <button class="button button-block button-positive" ng-click="loginFacebook()">
+          Login with Facebook
+        </button>
+    </ion-content>
+</ion-view>
